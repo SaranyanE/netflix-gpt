@@ -19,6 +19,9 @@ If you are developing a production application, we recommend using TypeScript wi
 
 -created React app-netflix-gpt
 -configured Tailwindcss
+-Header
+-login form
+-Sign up Form
 
 # features:
 
