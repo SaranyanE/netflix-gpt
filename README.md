@@ -20,8 +20,19 @@ If you are developing a production application, we recommend using TypeScript wi
 -created React app-netflix-gpt
 -configured Tailwindcss
 -Header
+-routing of app
 -login form
 -Sign up Form
+-form validation
+-(useRef hook)
+-firebase setup
+-Deploying app to production
+-create Sign up user account
+-implement signin user
+-created redux store with userSlice
+-implemented sign out
+-update profile
+-fetch from tmdb movies
 
 # features:
 
