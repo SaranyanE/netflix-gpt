@@ -33,6 +33,16 @@ If you are developing a production application, we recommend using TypeScript wi
 -implemented sign out
 -update profile
 -fetch from tmdb movies
+-bug fixing: redirecting user login and logout
+-unsubscribed to the onAuthStateChange callback
+-registered in tmdb and created an account ,api ,docs and got now playing movies list data in browse page
+created movieslice
+updated store with movie data
+main container and sec con
+fetch data for trailer video
+updated store with trailer video
+embedded the youtube video and made it autoplay
+tailwind class
 
 # features:
 
