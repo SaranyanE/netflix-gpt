@@ -43,6 +43,7 @@ fetch data for trailer video
 updated store with trailer video
 embedded the youtube video and made it autoplay
 tailwind class
+next to build the sec component
 
 # features:
 
