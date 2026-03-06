@@ -44,6 +44,15 @@ updated store with trailer video
 embedded the youtube video and made it autoplay
 tailwind class
 next to build the sec component
+-built sec container
+-built cards
+-added img cdn url
+-made the ui looks better
+
+-gpt search bar and page
+
+gpt search feature
+integrate the gpt api's
 
 # features:
 

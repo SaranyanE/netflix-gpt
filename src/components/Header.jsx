@@ -8,6 +8,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, PHOTO_URL } from "../utils/constants";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -47,13 +48,24 @@ const Header = () => {
     return () => unsubscribe(); //when component unmounts
   }, []);
 
+  const handleGptSearchClick = () => {
+    //toggle search
+    dispatch(toggleGptSearchView());
+  };
+
   return (
-    <div className="fixed top-0 left-0 w-full px-8 py-2 bg-linear-to-b from-black z-50 flex items-center justify-between">
+    <div className="absolute w-screen px-8 py-2 bg-linear-to-b from-black z-10 flex items-center justify-between">
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
-        <div className="flex items-center gap-3 ">
+        <div className="flex p-2 ">
+          <button
+            className="py-2 px-4 mx-4 my-2 bg-blue-500 rounded-lg text-white"
+            onClick={handleGptSearchClick}
+          >
+            GPT Search
+          </button>
           <img
-            className="w-10 h-10 rounded-md"
+            className="w-12 h-12 rounded-md"
             alt="userIcon"
             src={PHOTO_URL}
           />
